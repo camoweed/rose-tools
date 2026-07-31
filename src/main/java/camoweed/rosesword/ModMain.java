@@ -15,6 +15,10 @@ public class ModMain implements ModInitializer, RecipeEntrypoint, GameStartEntry
     @Override
     public void onInitialize() {
 		ModItems.initItems();
+		OreTags.init();
+		OreGroups.init();
+		PickAxeRegister.init();
+		PickAxeRegister.register(ModItems.rosePick);
         LOGGER.info("Rosesword initialized.");
     }
 

@@ -34,6 +34,7 @@ public class ModModels implements ModelEntrypoint {
 			dispatcher.addDispatch(makeModel(ModItems.roseChest, "roseChest"));
 			dispatcher.addDispatch(makeModel(ModItems.roseHelm, "roseHelm"));
 		dispatcher.addDispatch(makeModel(ModItems.roseAxe, "roseaxe").setDisplayPos("firstperson_righthand", HANDHELD_FIRST_PERSON_RIGHT_HAND).setDisplayPos("firstperson_lefthand", HANDHELD_FIRST_PERSON_LEFT_HAND).setDisplayPos("thirdperson_righthand", HANDHELD_THIRD_PERSON_RIGHT_HAND).setDisplayPos("thirdperson_lefthand", HANDHELD_THIRD_PERSON_LEFT_HAND));
+		dispatcher.addDispatch(makeModel(ModItems.rosePick, "rosepick").setDisplayPos("firstperson_righthand", HANDHELD_FIRST_PERSON_RIGHT_HAND).setDisplayPos("firstperson_lefthand", HANDHELD_FIRST_PERSON_LEFT_HAND).setDisplayPos("thirdperson_righthand", HANDHELD_THIRD_PERSON_RIGHT_HAND).setDisplayPos("thirdperson_lefthand", HANDHELD_THIRD_PERSON_LEFT_HAND));
 
 		LOGGER.info("Item Models initialized.");
 	}
