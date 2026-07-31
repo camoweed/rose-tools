@@ -37,7 +37,17 @@ public class ModRecipes implements RecipeEntrypoint {
 			.addInput('R', Blocks.FLOWER_RED)
 			.addInput('S', Items.TOOL_AXE_IRON)
 			.addInput('T', Items.INGOT_STEEL)
-			.create("rose_sword", new ItemStack(roseAxe, 1));
+			.create("rose_axe", new ItemStack(roseAxe, 1));
+		RecipeBuilder.Shaped(MOD_ID)
+			.setShape(
+				"ARA",
+				"TST",
+				"ARA")
+			.addInput('A', Blocks.ALGAE)
+			.addInput('R', Blocks.FLOWER_RED)
+			.addInput('S', Items.TOOL_PICKAXE_IRON)
+			.addInput('T', Items.INGOT_STEEL)
+			.create("rose_pickaxe", new ItemStack(rosePick, 1));
 		RecipeBuilder.Shaped(MOD_ID)
 			.setShape(
 				"ARA",
