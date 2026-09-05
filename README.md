@@ -10,7 +10,7 @@ Has the effect of treecapitator.
 Has the effect of veinminer on ores and moss.
 
 ### Rose Sword
-Currently no special effects
+Small healing effect.
 
 ### Rose Armour
 High fall resistance, similar to leather but much higher durability.

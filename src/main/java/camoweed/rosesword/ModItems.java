@@ -5,10 +5,12 @@ import static camoweed.rosesword.ModMain.MOD_ID;
 import net.minecraft.core.enums.HumanArmorShape;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemArmor;
+import net.minecraft.core.item.Items;
 import net.minecraft.core.item.material.ArmorMaterial;
 import net.minecraft.core.item.material.ToolMaterial;
 import turniplabs.halplibe.helper.ArmorHelper;
 import turniplabs.halplibe.helper.ItemBuilder;
+import turniplabs.halplibe.helper.creativeInventory.CreativeInventoryPlacement;
 
 public class ModItems {
 
@@ -23,18 +25,25 @@ public class ModItems {
         public static ArmorMaterial roseArmour = ArmorHelper.createArmorMaterial(MOD_ID, "roseArmour", 600, 50f, 35f, 15f, 100f);
     public static void initItems() {
             roseSword = new ItemBuilder(MOD_ID)
+				.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
         .build(new ModRoseSword("rosesword", MOD_ID + ":item/rosesword", 17000, roseToolMaterial));
             roseBoots = new ItemBuilder(MOD_ID)
+				.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
         .build(new ItemArmor("roseBoots", MOD_ID + ":item/roseBoots", 17001, roseArmour, HumanArmorShape.BOOTS));
             rosePants = new ItemBuilder(MOD_ID)
+				.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
         .build(new ItemArmor("rosePants", MOD_ID + ":item/rosePants", 17002, roseArmour, HumanArmorShape.LEGS));
             roseChest = new ItemBuilder(MOD_ID)
+				.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
         .build(new ItemArmor("roseChest", MOD_ID + ":item/roseChest", 17003, roseArmour, HumanArmorShape.CHEST));
             roseHelm = new ItemBuilder(MOD_ID)
+				.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
         .build(new ItemArmor("roseHelm", MOD_ID + ":item/roseHelm", 17004, roseArmour, HumanArmorShape.HEAD));
 		roseAxe = new ItemBuilder(MOD_ID)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
 			.build(new ModRoseAxe("roseaxe", MOD_ID + ":item/roseaxe", 17005));
 		rosePick = new ItemBuilder(MOD_ID)
+			.setCreativeInventoryPlacement(new CreativeInventoryPlacement.After(() -> Items.TOOL_SWORD_STEEL))
 			.build(new ModRosePickaxe("rosepick", MOD_ID + ":item/rosepick", 17006,roseToolMaterial));
     }
 }
